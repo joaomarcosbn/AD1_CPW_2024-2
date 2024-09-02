@@ -1,0 +1,42 @@
+body {
+    background-color: #DDCC55;
+    color: #000000;
+    font-family: "stoke", "Lucida Bright", "liberation";
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #7711CC;
+    visited-color: #8822DD;
+}
+
+ol, ul {
+    line-height: 200%;
+}
+
+.ender {
+    float: right;
+    text-align: right;
+    line-height: 140%;
+    font-size: 14px;
+    font-family: "Karla", "Verdana", "Ubuntu";
+}
+
+.imgLogo {
+    border-bottom: 3px solid #402020;
+    margin-bottom: 6px;
+    padding-bottom: 15px;
+}
+
+.apres {
+    text-align: center;
+    font-size: 16px;
+}
+
+nav ul {
+    color: #332277;
+    line-height: 230%;
+    margin-top: 40px;
+    list-style-type: square;
+}
