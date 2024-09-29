@@ -1,0 +1,77 @@
+body {
+    background-color: #DDCC55;
+    color: #000000;
+    font-family: "stoke", "Lucida Bright", "liberation";
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #222222;
+}
+
+a:visited {
+    color: #222222;
+}
+
+ol, ul {
+    line-height: 200%;
+    color: #202020;
+}
+
+.ender {
+    float: right;
+    text-align: right;
+    line-height: 140%;
+    font-size: 14px;
+    font-family: "Karla", "Verdana", "Ubuntu";
+}
+
+.imgLogo {
+    border-bottom: 3px solid #402020;
+    margin-bottom: 6px;
+    padding-bottom: 15px;
+}
+
+.apres {
+    text-align: center;
+    font-size: 16px;
+}
+
+nav ul {
+    color: #222222;
+    line-height: 230%;
+    margin-top: 40px;
+    list-style-type: square;
+}
+
+section {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .titulo {
+    text-align: center;
+  }
+  
+  .listaNum {
+    width: 480px;
+    background-color: #EEDDCC;
+    color: #000000;
+    padding: 10px 10px 10px 50px;
+    border: 2px solid #000000;
+    margin: 0 auto;
+  }
+  .listaNum li{
+    color: #000000;
+    list-style-type: square;
+  }
+  
+  .listaComp li {
+    color: #000000;
+    list-style-type: lower-alpha;
+  }
+  
+  .preco {
+    color: #CC0000;
+  }
