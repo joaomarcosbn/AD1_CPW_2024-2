@@ -48,6 +48,7 @@ nav ul {
 section {
     margin-top: 0px;
     margin-bottom: 10px;
+    align-items: center;
   }
   
   .titulo {
@@ -72,6 +73,79 @@ section {
     list-style-type: lower-alpha;
   }
   
-  .preco {
-    color: #CC0000;
-  }
+.preco {
+  color: #CC0000;
+}
+
+.menu {
+  width: 20%; /* Ocupa 50% da largura da página */
+  height: 100vh; /* Ocupa toda a altura da página */
+  float: left;
+}
+
+.tabEquip {
+  border-collapse: separate;
+  width: 40%;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border-spacing: 0;
+}
+
+.tabTitulo {
+  background-color: #402020;
+  color: #FFFFFF;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.tabSubTit {
+  background-color: #802020;
+  color: #FFFFFF;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.imgCel {
+  width: 120px;
+  background-color: #FFFFFF;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.imgCel img {
+  width: 100%;
+  height: auto;
+}
+
+td {
+  border: 1px solid #000;
+  padding: 10px;
+  background-color: #EEEEBB;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.reverseRow td {
+  text-align: left;
+}
+
+
+.tabEquip th, .tabEquip td {
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+
+.tabSubTit {
+  background-color: #802020;
+  color: #FFFFFF;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+.tabEquip td {
+  background-color: #EEEEBB;
+  font-size: 12px;
+  text-align: left;
+}
