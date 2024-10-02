@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halteres Seus Habitos - Inscricao</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img class="imgLogo" src="Imagens/HalteresSeusHabitosTopo.png" alt="Logo da Loja">
+        <div class="ender">
+          <td width="100"><address>Estrada do Puxa Ferro, 12 <br> Tel: (21)91234-5678 <br> contato@halterhabit.com.br</address></td>
+        </div>
+    </header>
+
+    <nav>
+        <div class="menu">
+            <ul>
+                <li><a href="Index.html">Apresentação</a></li>
+                <li><a href="Planos.html">Planos</a></li>
+                <li><a href="Equipamentos.html">Equipamentos</a></li>
+                <li><a href="Inscricao.html">Inscrição</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <h2 class="titulo">Inscrição</h2>
+
+        <form class="formul">
+            <h1>Inscrição</h1>
+        
+            <fieldset class="fsPessoal">
+              <legend>Dados Pessoais</legend>
+        
+              <div class="linhaNome">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" class="inpNome">
+              </div>
+        
+              <div class="linhaDados">
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" class="inpTelef">
+        
+                <label for="celular">Celular:</label>
+                <input type="text" id="celular" name="celular">
+        
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" min="18" max="100" value="18">
+              </div>
+        
+              <fieldset class="fsGenero">
+                <legend>Gênero</legend>
+                <label><input type="radio" name="genero" value="masculino"> Masculino</label><br>
+                <label><input type="radio" name="genero" value="feminino" checked> Feminino</label><br>
+                <label><input type="radio" name="genero" value="outro"> Outro</label>
+              </fieldset>
+            </fieldset>
+        
+            <fieldset class="fsMatricula">
+              <legend>Matrícula</legend>
+              <label for="matriculado">Matriculado?</label>
+              <input type="checkbox" id="matriculado" name="matriculado">
+              <label for="numero">Número:</label>
+              <input type="text" id="numero" name="numero" class="inpMat">
+        
+              <label for="atividade">Atividade:</label>
+              <select id="atividade" name="atividade">
+                <option value="">-----</option>
+                <option value="musculacao">Musculação</option>
+                <option value="natacao">Natação</option>
+              </select>
+        
+              <label for="plano">Plano:</label>
+              <select id="plano" name="plano">
+                <option value="">-----</option>
+                <option value="mensal">Mensal</option>
+                <option value="anual">Anual</option>
+              </select>
+        
+              <fieldset class="fsCartao">
+                <legend>Cartão</legend>
+                <label for="bandeira">Bandeira:</label>
+                <label><input type="radio" name="bandeira" value="visa" checked> Visa</label>
+                <label><input type="radio" name="bandeira" value="master"> Master</label>
+                <label><input type="radio" name="bandeira" value="elo"> Elo</label>
+        
+                <label for="validade-mes">Validade:</label>
+                <input type="number" id="validade-mes" name="validade-mes" min="1" max="12" value="10" class="numDD"> /
+                <input type="number" id="validade-ano" name="validade-ano" min="2024" value="2024" class="numQD">
+        
+                <label for="cartao-numero">Número:</label>
+                <input type="text" id="cartao-numero" name="cartao-numero" class="inpNCC">
+              </fieldset>
+            </fieldset>
+        
+            <button type="submit" style="float: right; margin-right: 20px;">Enviar</button>
+            <button type="reset" style="float: right; margin-right: 20px;">Limpar</button>
+        
+            <label for="matriculaPlano">Matrícula+Plano</label>
+            <input type="text" id="matriculaPlano" name="matriculaPlano" class="ColValTot">
+            <label for="valor">Valor: R$</label>
+            <input type="text" id="valor" name="valor" class="inpVal">
+          </form>
+      </section>
+    
+</body>
+</html>
