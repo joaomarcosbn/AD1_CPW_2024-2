@@ -154,55 +154,66 @@ td {
   text-align: left;
 }
 
+.tituloInsc{
+  align-items: left;
+  padding-left: 650px;
+
+}
 .formul {
   width: 400px;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin: 0 auto 10px;
+  margin: 0 auto 10px auto;
   background-color: #EEEEBB;
   color: #202020;
   border: 3px solid #202020;
   font-size: 12px;
+  float: left;
+
 }
 
-.fsPessoal, .fsMatricula, .fsCartao {
+.fsPessoal, .fsMatricula {
   width: 340px;
-  margin: 0 auto 10px;
+  margin: 0 auto 10px auto;
+  padding: 10px;
   border: 1px solid #000;
+}
+
+.linhaMatricula, .linhaPlano, .linhaCartao, .linhaCheck, .linhaValor {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .fsGenero {
   float: right;
-  margin-top: 10px;
+  margin-top: -150px;
   margin-right: 10px;
   width: 130px;
 }
 
-.linhaNome, .linhaDados {
+.linhaNome {
+  height: 50px;
+  width: 340px;
   padding-top: 8px;
 }
 
-.linhaNome {
-  height: 30px;
-  width: 340px;
-}
-
 .linhaDados {
-  height: 130px;
+  height: 150px;
   width: 340px;
 }
 
 .fsCartao {
   width: 280px;
   margin: 10px auto;
-  bottom: root;
 }
 
 .inpNome {
   width: 220px;
 }
 
-.inpTelef {
+.inpTelef, #idade {
   width: 90px;
 }
 
@@ -244,6 +255,25 @@ label {
 }
 
 input, select {
-  display: block;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
+  border-radius: 3px;
 }
+
+.tituloinsc {
+  text-align: center;
+}
+
+fieldset {
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+button {
+  float: right;
+  margin-right: 20px;
+}
+

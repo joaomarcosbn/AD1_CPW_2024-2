@@ -26,10 +26,9 @@
     </nav>
 
     <section>
-        <h2 class="titulo">Inscrição</h2>
+        <h2 class="tituloInsc">Inscrição</h2>
 
         <form class="formul">
-            <h1>Inscrição</h1>
         
             <fieldset class="fsPessoal">
               <legend>Dados Pessoais</legend>
@@ -60,31 +59,44 @@
         
             <fieldset class="fsMatricula">
               <legend>Matrícula</legend>
-              <label for="matriculado">Matriculado?</label>
-              <input type="checkbox" id="matriculado" name="matriculado">
-              <label for="numero">Número:</label>
-              <input type="text" id="numero" name="numero" class="inpMat">
+              <div class="linhaMatricula">
+                <span class="linhaCheck">
+                  <label for="matriculado">Matriculado?</label>
+                  <input type="checkbox" id="matriculado" name="matriculado">
+                </span>
+                <span>
+                  <label for="numero">Número:</label>
+                  <input type="text" id="numero" name="numero" class="inpMat">
+                </span>
+              </div>
         
-              <label for="atividade">Atividade:</label>
-              <select id="atividade" name="atividade">
-                <option value="">-----</option>
-                <option value="musculacao">Musculação</option>
-                <option value="natacao">Natação</option>
-              </select>
-        
-              <label for="plano">Plano:</label>
-              <select id="plano" name="plano">
-                <option value="">-----</option>
-                <option value="mensal">Mensal</option>
-                <option value="anual">Anual</option>
-              </select>
+              <div class="linhaPlano">
+                <label for="atividade">Atividade:</label>
+                <select id="atividade" name="atividade">
+                  <option value="">-----</option>
+                  <option value="musculacao">Musculação</option>
+                  <option value="natacao">Natação</option>
+                  <option value="combo">Combo</option>
+                </select>
+              
+                <label for="plano">Plano:</label>
+                <select id="plano" name="plano">
+                  <option value="">-----</option>
+                  <option value="mensal">Mensal</option>
+                  <option value="semestral">Semestral</option>
+                  <option value="anual">Anual</option>
+                </select>
+              </div>
         
               <fieldset class="fsCartao">
                 <legend>Cartão</legend>
-                <label for="bandeira">Bandeira:</label>
-                <label><input type="radio" name="bandeira" value="visa" checked> Visa</label>
-                <label><input type="radio" name="bandeira" value="master"> Master</label>
-                <label><input type="radio" name="bandeira" value="elo"> Elo</label>
+
+                <div class="linhaCartao">
+                  <label for="bandeira">Bandeira:</label>
+                  <label><input type="radio" name="bandeira" value="visa" checked> Visa</label>
+                  <label><input type="radio" name="bandeira" value="master"> Master</label>
+                  <label><input type="radio" name="bandeira" value="elo"> Elo</label>
+                </div>
         
                 <label for="validade-mes">Validade:</label>
                 <input type="number" id="validade-mes" name="validade-mes" min="1" max="12" value="10" class="numDD"> /
@@ -93,15 +105,20 @@
                 <label for="cartao-numero">Número:</label>
                 <input type="text" id="cartao-numero" name="cartao-numero" class="inpNCC">
               </fieldset>
+
+              <div>
+                <span><button type="submit" style="float: left; margin-left: 20px;">Matrícula+Plano</button></span>
+                <span class="linhaValor">
+                  <label for="valor">Valor: R$</label>
+                  <input type="text" id="valor" name="valor" class="inpVal">
+                </span>
+              </div>
             </fieldset>
         
             <button type="submit" style="float: right; margin-right: 20px;">Enviar</button>
             <button type="reset" style="float: right; margin-right: 20px;">Limpar</button>
         
-            <label for="matriculaPlano">Matrícula+Plano</label>
-            <input type="text" id="matriculaPlano" name="matriculaPlano" class="ColValTot">
-            <label for="valor">Valor: R$</label>
-            <input type="text" id="valor" name="valor" class="inpVal">
+            
           </form>
       </section>
     
